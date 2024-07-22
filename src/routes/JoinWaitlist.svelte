@@ -1,6 +1,11 @@
-<script>
-  export let color
+<script lang="ts">
+  export let color: 'emerald' | 'indigo' | 'blue' = 'emerald'
 
+  const colorVariants = {
+    emerald: 'bg-emerald-600 hover:bg-emerald-500',
+    indigo: 'bg-indigo-600 hover:bg-indigo-500',
+    blue: 'bg-blue-600 hover:bg-blue-500'
+  }
   let email = ''
 
   let success = false
@@ -15,13 +20,18 @@
     }
 
     try {
-      const res = await fetch('/api/join-waitlist', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({email})
-      })
+      const res = await fetch(
+        'https://lefv2u7s27wmo25osdr5cygfia0zcney.lambda-url.eu-west-1.on.aws/',
+        {
+          method: 'POST',
+          mode: 'cors',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({email})
+        }
+      )
+      console.log('Response:', res)
 
       if (res.status === 200) {
         success = true
@@ -45,7 +55,7 @@
     />
     <button
       on:click={joinWaitlist}
-      class="ml-2 bg-{color}-500 p-2 px-6 text-white">Join</button
+      class="{colorVariants[color]} ml-2 p-2 px-6 text-white">Join</button
     >
     <svg
       class="ml-1 h-6 w-6 text-green-500 opacity-0"
