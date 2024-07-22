@@ -33,7 +33,6 @@
           body: JSON.stringify({email, fromPage})
         }
       )
-      console.log('Response:', res)
 
       if (res.status === 200) {
         success = true
