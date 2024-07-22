@@ -1,4 +1,5 @@
 <script lang="ts">
+  export let fromPage: string
   export let color: 'emerald' | 'indigo' | 'blue' = 'emerald'
 
   const colorVariants = {
@@ -6,6 +7,7 @@
     indigo: 'bg-indigo-600 hover:bg-indigo-500',
     blue: 'bg-blue-600 hover:bg-blue-500'
   }
+
   let email = ''
 
   let success = false
@@ -28,7 +30,7 @@
           headers: {
             'Content-Type': 'application/json'
           },
-          body: JSON.stringify({email})
+          body: JSON.stringify({email, fromPage})
         }
       )
       console.log('Response:', res)

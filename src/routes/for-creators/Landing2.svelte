@@ -23,7 +23,7 @@
         Sign up to register interest
       </h2>
       <div class="mt-2 flex flex-row items-center">
-        <JoinWaitlist color="indigo" />
+        <JoinWaitlist color="indigo" fromPage="creators" />
       </div>
       <p class="text-md mt-2 text-center text-gray-400">
         Selected emails will be able to participate in the beta program.
