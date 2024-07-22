@@ -1,0 +1,65 @@
+{
+	"version": 3,
+	"routes": [
+		{
+			"src": "/for-business",
+			"dest": "/for-business/"
+		},
+		{
+			"src": "/for-business/",
+			"status": 308,
+			"headers": {
+				"Location": "/for-business"
+			}
+		},
+		{
+			"src": "/for-creators",
+			"dest": "/for-creators/"
+		},
+		{
+			"src": "/for-creators/",
+			"status": 308,
+			"headers": {
+				"Location": "/for-creators"
+			}
+		},
+		{
+			"src": "/for-startups",
+			"dest": "/for-startups/"
+		},
+		{
+			"src": "/for-startups/",
+			"status": 308,
+			"headers": {
+				"Location": "/for-startups"
+			}
+		},
+		{
+			"src": "/_app/immutable/.+",
+			"headers": {
+				"cache-control": "public, immutable, max-age=31536000"
+			}
+		},
+		{
+			"handle": "filesystem"
+		},
+		{
+			"src": "/.*",
+			"dest": "/fn"
+		}
+	],
+	"overrides": {
+		"index.html": {
+			"path": ""
+		},
+		"for-business.html": {
+			"path": "for-business"
+		},
+		"for-creators.html": {
+			"path": "for-creators"
+		},
+		"for-startups.html": {
+			"path": "for-startups"
+		}
+	}
+}
