@@ -18,7 +18,7 @@ Quickly build and deploy your agent as a chatbot or custom API.
 -->
 
 <div class="bg-neutral-900 py-1">
-  <div class="container mx-auto mb-28 px-12">
+  <div class="container mx-auto mb-28 px-5 lg:px-12">
     <div class="mt-16 grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
       <div>
         <h3 class="max-w-lg text-6xl font-bold text-blue-500">

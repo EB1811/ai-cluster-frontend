@@ -5,14 +5,16 @@
 </script>
 
 <div class="bg-neutral-900">
-  <main class="container mx-auto flex h-screen flex-col items-center pt-52">
+  <main
+    class="container mx-auto flex min-h-screen flex-col items-center px-5 pt-52 lg:px-0"
+  >
     <div class="max-w-xl">
       <h1 class="text-6xl font-bold text-emerald-500">Custom AI Solutions</h1>
       <p class="text-md mt-2 text-gray-400">
         Visual platform to build, manage, and deploy custom LLM agents with
         ease.
       </p>
-      <p class="text-md text-nowrap text-gray-400">
+      <p class="text-md text-gray-400 lg:text-nowrap">
         Enough with the simple chatbots, build fully-fledged AI agents that can
         automate your business.
       </p>

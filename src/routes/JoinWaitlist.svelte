@@ -52,7 +52,7 @@
       bind:value={email}
       type="text"
       placeholder="Email"
-      class="w-80 bg-neutral-700 p-2 text-gray-200 focus:outline-none"
+      class="bg-neutral-700 p-2 text-gray-200 focus:outline-none lg:w-80"
     />
     <button
       on:click={joinWaitlist}

@@ -1,5 +1,3 @@
 # AI Cluster Landing Page
 
-
-
-Live at [vordler-bot.vercel.app](https://vordler-bot.vercel.app/).
+Live at [ai-cluster-frontend.vercel.app](https://ai-cluster-frontend.vercel.app).
