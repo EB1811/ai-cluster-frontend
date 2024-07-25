@@ -118,7 +118,7 @@ const options = {
     app: ({ head, body, assets: assets2, nonce, env }) => '<!doctype html>\n<html lang="en">\n  <head>\n    <meta charset="utf-8" />\n    <link rel="icon" href="' + assets2 + '/favicon.png" />\n    <meta name="viewport" content="width=device-width" />\n    ' + head + `
 
     <!-- Google tag (gtag.js) -->
-    <script
+    <!-- <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=AW-11379785830"
     ><\/script>
@@ -130,7 +130,7 @@ const options = {
       gtag('js', new Date())
 
       gtag('config', 'AW-11379785830')
-    <\/script>
+    <\/script> -->
   </head>
   <body data-sveltekit-preload-data="hover">
     <div style="display: contents">` + body + "</div>\n  </body>\n</html>\n",
@@ -205,7 +205,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "nbvqr4"
+  version_hash: "155764a"
 };
 async function get_hooks() {
   return {};
