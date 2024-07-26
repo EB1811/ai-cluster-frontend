@@ -21,6 +21,11 @@
       return
     }
 
+    if (!email.includes('@') || !email.includes('.')) {
+      error = 'Error: Invalid email'
+      return
+    }
+
     try {
       const res = await fetch(
         'https://lefv2u7s27wmo25osdr5cygfia0zcney.lambda-url.eu-west-1.on.aws/',
